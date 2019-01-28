@@ -50,24 +50,44 @@ table {
 /* ===== RESET ENDS HERE ======= */
 
 .container {
-    width: 650px;
-    border: 1px solid black;
+    width: 850px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
 }
 
 button {
   font-size: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  /* font-weight: bold; */
+  background-color: rgb(148, 148, 148);
 }
 
 header {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  background-image: url("/img/sky.jpeg");
+  /* background-repeat: no-repeat; */
 }
 
   header div.header-top {
     width: 100%;
     display: inline-flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-between;
+    align-items: baseline;
+    margin-top: 15px;
+  }
+
+  .header-top > .logo {
+    margin-left: 25px;
+  }
+
+  .header-top > .logo > span {
+    color: rgb(82, 82, 82);
+    font-size: 20px;
+    font-weight: bold;
   }
 
   div.logo {
@@ -78,14 +98,21 @@ header {
     order: 1;
   }
   
+  div.navigation > nav {
+    /* width: 80%; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+  }
+
   nav a {
-    margin: 10px;
+    /* flex: 1; */
+    margin-right: 2px;
     text-decoration: none;
     color: black;
-    display: inline-block;
     border: 1px solid darkgrey;
     padding: 5px 20px;
-    border-radius: 2px;
+    border-radius: 3px;
     font-size: 10px;
     background-color: lightgray;
   }
@@ -93,6 +120,11 @@ header {
   nav a:first-child {
     color: white;
     background-color: rgb(148, 148, 148);
+    /* font-weight: bold; */
+  }
+
+  nav a:last-child {
+    margin-right: 20px;
   }
 
   .header-bottom {
@@ -104,10 +136,16 @@ header {
 
   .header-bottom > h1 {
     font-size: 40px;
+    margin-top: 25px;
   }
 
   .header-bottom > h2 {
     font-size: 25px;
+  }
+
+  button.learn-more {
+    margin-top: 10px;
+    margin-bottom: 17px;
   }
 
 
